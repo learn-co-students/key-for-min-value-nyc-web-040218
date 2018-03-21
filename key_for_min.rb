@@ -2,14 +2,9 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  i = 0
-  
-  name_hash.map do |key, value|
-    array = [key, value]
+  name_hash.each do |key, value|
+    if value < ?
   end
-  
-  if i < array.length
-    
-  end
-  
 end
+
+key_for_min_value({:chair => 25, :matress => 850, :table => 80})
