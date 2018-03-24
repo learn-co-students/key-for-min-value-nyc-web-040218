@@ -6,9 +6,9 @@ if name_hash.empty?
   return nil
 end
 empty_key = nil
-empty_val = Float::INFINITY
+empty_val = nil
 name_hash.each do |symbol, value|
-  if value < empty_val
+  if empty_val == nil || value < empty_val
     empty_val = value
     empty_key = symbol
   end
